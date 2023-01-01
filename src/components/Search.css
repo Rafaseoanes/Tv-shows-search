@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
 .searchForm{
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap
 }
 .textField{
     border: none;
@@ -24,4 +28,16 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     color: #13161f;
+    margin-top: 45px;
+
 }
+.errorMessage{
+    color: tomato;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+         
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }

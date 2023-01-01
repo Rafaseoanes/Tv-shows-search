@@ -8,9 +8,8 @@ function Search() {
 
     const [data, setData] = useState([])
 
-
+        // Fetch data from API
     const searchShows = async (value) => {
-   
         try {
             let answer = await fetch(`https://api.tvmaze.com/search/shows?q=${value.showName}`)
             let showsInfo = await answer.json()
@@ -22,6 +21,7 @@ function Search() {
         }
     }
 
+         //Form validation
     const validations = (value) => {
         const error = {}
         if(value.showName.length < 1) error.showName = 'Please enter a Tv show name!'
@@ -29,7 +29,7 @@ function Search() {
     }
 
   return (
-    <div className='searchForm'>
+    <div>
         <Formik
         initialValues={{
             showName: ''
@@ -37,10 +37,13 @@ function Search() {
         onSubmit = { searchShows }
         validate = { validations }
         >
-            <Form>
+            <Form className='searchForm'>
                 <Field className='textField' name='showName' type='text'/>
-                <ErrorMessage name='showName' />
                 <button className='submitButton' type='submit' >Search</button>
+                <div className="break"></div>
+                <div className='errorMessage'>
+                <ErrorMessage name='showName'  />
+                </div>
             </Form>
         </Formik>
         <Results data={ data } />
