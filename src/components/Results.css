@@ -1,4 +1,8 @@
-.results {  display: grid;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+
+.results {  
+    
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px 10px;
@@ -11,9 +15,45 @@
       ". . . ."
       ". . . ."
       ". . . .";
-      margin-top: 100px;
+      width: 60vw;
+      margin: 70px auto ;
+      /* background-color: #090910; */
+      
+     
+  }
+  .eachShow{
+    position: relative;
+    height: 200px;
+    
   }
   .showImage{
+    
     height: 200px;
+    border-radius: 3px;
+    z-index: 1;
   }
-  
+  .title{
+    position: absolute;
+    bottom: 0;
+    background-color: #13161f90;
+    color: white;
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    z-index: 5;
+    backdrop-filter: blur(10px);
+    font-family: 'Oswald', sans-serif;
+  }
+  .genres{
+    font-size:xx-small;
+    font-weight: 200;
+    color: rgb(182, 182, 182);
+  }
+  .star{
+    color: rgb(245, 185, 96);
+  }
+  .rating{
+    color: tomato;
+  }
