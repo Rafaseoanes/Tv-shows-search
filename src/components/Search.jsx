@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Results from './Results'
+import './Search.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 
 
@@ -28,7 +29,7 @@ function Search() {
     }
 
   return (
-    <div>
+    <div className='searchForm'>
         <Formik
         initialValues={{
             showName: ''
@@ -37,9 +38,9 @@ function Search() {
         validate = { validations }
         >
             <Form>
-                <Field name='showName' type='text'/>
+                <Field className='textField' name='showName' type='text'/>
                 <ErrorMessage name='showName' />
-                <button type='submit' >Search</button>
+                <button className='submitButton' type='submit' >Search</button>
             </Form>
         </Formik>
         <Results data={ data } />

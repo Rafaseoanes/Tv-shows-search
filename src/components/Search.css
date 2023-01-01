@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+.searchForm{
+    text-align: center;
+}
+.textField{
+    border: none;
+    border-style: none;
+    background-color: rgb(29, 33, 45);
+    height: 40px;
+    width: 450px;
+    border-radius: 5px;
+    margin: 45px 20px 0px 20px;
+    padding: 0 15px;
+    color: white;
+    
+}
+.submitButton{
+    border: none;
+    border-style: none;
+    background-color: rgb(245, 185, 96);
+    height: 38px;
+    width: 80px;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #13161f;
+}
