@@ -1,0 +1,26 @@
+*{
+    color: aliceblue;
+}
+.mainContainer{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;    
+    
+}
+.imageContainer{
+    margin: auto;
+}
+.infoContainer{
+    padding: 50px;
+}
+.showImage{
+    height: 70vh;
+    border-radius: 5px;
+}
+.star{
+    color: rgb(245, 185, 96);
+  }
