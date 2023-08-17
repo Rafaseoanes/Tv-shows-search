@@ -12,7 +12,7 @@ function Results(props) {
     {props.data.map(obj => (
 
         <div className='eachShow' key={obj.show.id}>
-            <img className='showImage' src={obj.show.image.medium} alt={`${obj.show.name}${obj.show.id} show`} />
+            <img className='showImage' src={obj.show.image?.medium ?? "https://i.imgur.com/o3V783L.jpeg" } alt={`${obj.show.name}${obj.show.id} show`} />
             
             <div className='title'>
               {/* Show title */}
